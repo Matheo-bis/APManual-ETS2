@@ -347,7 +347,7 @@ def count_progression_items(options: Any) -> ProgressionCount:
     if options.skill_items_scattered:
         levels = 36
         if options.skill_items_on_levels:
-            levels -= options.player_level_count.value
+            levels -= options.player_level_checks.value
 
         if levels > 20:
             output.mandatory += levels - 20
